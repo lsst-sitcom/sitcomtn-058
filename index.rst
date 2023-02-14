@@ -97,7 +97,7 @@ These constraints can be also changed with following parameters:
 .. table::
 
     .. csv-table:: Selected Tycho-2 Stars 
-        :header: , TYC1,TYC2,TYC3,pmRA,pmDE,BTmag,VTmag,HIP,"RA_ICRS_","DE_ICRS_",net_pm
+        :header: , TYC1,TYC2,TYC3,pmRA,pmDE,BTmag,VTmag,HIP,RA_ICRS,DE_ICRS,net_pm
         :width: 20
 
         1,4663,45,1,45.900002,-53.400002,7.695,6.420,417.0,1.265827,-0.502912,35.207848
