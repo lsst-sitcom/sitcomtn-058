@@ -10,8 +10,7 @@
 Abstract
 ========
 
-A catalog of clean surrounding stars is required to perform focus and alignment with the AuxTel observation. It is anticipated that rebuilding star catalog is required when new criteria should be applied on the selection of stars. This technote is to describe the notebook that creates new catalog based on queries from Tycho-2 and HD catalog. This notebook can be found on this github repo `https://github.com/lsst-sitcom/sitcomtn-058/tree/main/_static <https://github.com/lsst-sitcom/sitcomtn-058/tree/main/_static>`__. 
-
+A catalog of clean surrounding stars is required to perform focus and alignment with the AuxTel observation. It is anticipated that rebuilding star catalog is required when new criteria should be applied on the selection of stars. This technote is to describe the notebook that creates new catalog based on queries from Tycho-2 and HD catalog. This notebook can be found on this github repo `https://github.com/lsst-sitcom/sitcomtn-058/tree/main/_static <https://github.com/lsst-sitcom/sitcomtn-058/tree/main/_static>`__.
 
 Generating a star catalog for the Auxtel observation
 ====================================================
@@ -25,7 +24,7 @@ See also details about `focusing, center, and absorb pointing offsets at AuxTel 
 Create a notebook with the Tycho-2 catalogue
 --------------------------------------------
 First, a list of stars from Vizier query of  
-`Tycho-2 catalogue <http://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=I/259/tyc2>`__ :cite:`2000A&A...355L..27H`. 
+`Tycho-2 catalogue <http://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=I/259/tyc2>`__ [Tycho2]_
 The range of :abbr:`RA (Right ascension)`, :abbr:`Decl. (Declination)`, and :math:`{V_{T}}`.
 
 - ``file``: ``string``, the json file name of Tycho-2 query file. 
@@ -115,8 +114,7 @@ These constraints can be also changed with following parameters:
 
 Match Tycho-2 and HD catalogs
 -----------------------------
-Now the star list is matched to `HD identifications for Tycho-2 stars <http://vizier.cfa.harvard.edu/viz-bin/VizieR-3?-source=IV/25/tyc2_hd>`__ :cite:`2002A&A...386..709F`.
-
+Now the star list is matched to `HD identifications for Tycho-2 stars <http://vizier.cfa.harvard.edu/viz-bin/VizieR-3?-source=IV/25/tyc2_hd>`__ [Tycho2_HD]_
 
 .. code-block:: py
 
@@ -251,5 +249,8 @@ The default FOV of the image are 6.7' x 6.7'.
 .. Uncomment to use citations
 
 .. rubric:: References
-.. bibliography:: local.bib 
+.. [Tycho2_HD] Fabricius et al 2002. *Henry Draper catalogue identifications for Tycho-2 stars* `doi:10.1051/0004-6361:20020249 <https://www.aanda.org/articles/aa/abs/2002/17/aah3397/aah3397.html>`_ 
+.. [Tycho2] Hog et al  2000. *The Tycho-2 catalogue of the 2.5 million brightest stars* `AAP, 355, L27 <https://ui.adsabs.harvard.edu/abs/2000A&A...355L..27H>`_
+   
+.... bibliography:: local.bib, 
     :style: lsst_aa
